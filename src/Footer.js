@@ -8,6 +8,15 @@ export default function Footer() {
       <hr />
       <div className="link">
         <a
+          href="https://github.com/RiikaInfinityy/weather-react"
+          className="btn btn-light btn-outline-secondary btn-lg btn-edit"
+          target="_blank"
+          alt="Github Open Source Code for Project"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-code-square"></i>
+        </a>{" "}
+        <a
           href="https://rikalim-portfolio-webpage.netlify.app/"
           className="btn btn-light btn-outline-secondary btn-lg btn-edit"
           target="_blank"
