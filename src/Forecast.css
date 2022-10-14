@@ -1,0 +1,58 @@
+.full-weather-report {
+  font-family: "Merriweather Sans", sans-serif;
+  padding: 12px;
+  color: #222324;
+  max-width: 730px;
+  max-height: auto;
+  margin: auto;
+}
+
+.card {
+  max-width: 120px;
+  min-width: 120px;
+  color: black;
+  opacity: 0.9;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin: 10px;
+}
+
+.card-title {
+  font-size: 13px;
+  font-weight: bolder;
+}
+
+.card-subtitle {
+  font-size: 10px;
+  font-weight: bolder;
+}
+
+.partlycloudy {
+  font-size: 30px;
+  margin: 10px auto;
+  color: #8d8a8a;
+}
+
+.partlycloudyxl {
+  font-size: 30px;
+  margin: 10px auto;
+  color: #8d8a8a;
+}
+
+.sunny {
+  font-size: 30px;
+  margin: 10px auto;
+  color: #eecf68;
+}
+
+.raining {
+  font-size: 30px;
+  margin: 10px auto;
+  color: #479adf;
+}
+
+.storm {
+  font-size: 30px;
+  margin: 10px auto;
+  color: #5147df;
+}
