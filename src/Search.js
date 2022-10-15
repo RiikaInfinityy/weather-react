@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import axios from "axios";
 
 import WeatherInfo from "./WeatherInfo";
-import WeatherForecast from "./WeatherForecast.";
+{
+  /*import WeatherForecast from "./WeatherForecast."; */
+}
 
 import weather from "./images/weather.svg";
 

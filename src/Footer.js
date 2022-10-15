@@ -20,7 +20,7 @@ export default function Footer() {
           href="https://rikalim-portfolio-webpage.netlify.app/"
           className="btn btn-light btn-outline-secondary btn-lg btn-edit"
           target="_blank"
-          alt="Rika Lim's Front-End Portfolio Page"
+          alt="Rika Lim's Front-End Portfolio"
           rel="noopener noreferrer"
         >
           <i className="bi bi-braces-asterisk"></i>
