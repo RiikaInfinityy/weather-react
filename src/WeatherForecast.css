@@ -27,32 +27,7 @@
   font-weight: bolder;
 }
 
-.partlycloudy {
-  font-size: 30px;
-  margin: 10px auto;
-  color: #8d8a8a;
-}
-
-.partlycloudyxl {
-  font-size: 30px;
-  margin: 10px auto;
-  color: #8d8a8a;
-}
-
-.sunny {
-  font-size: 30px;
-  margin: 10px auto;
-  color: #eecf68;
-}
-
-.raining {
-  font-size: 30px;
-  margin: 10px auto;
-  color: #479adf;
-}
-
-.storm {
-  font-size: 30px;
-  margin: 10px auto;
-  color: #5147df;
+.WeatherForecast-temperature-min {
+  opacity: 0.6;
+  margin-left: 5px;
 }

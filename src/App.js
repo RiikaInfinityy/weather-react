@@ -1,8 +1,6 @@
 import React from "react";
 
-
 import Search from "./Search";
-import Forecast from "./Forecast";
 import Footer from "./Footer";
 
 import "./App.css";
@@ -12,8 +10,7 @@ function App() {
     <div className="App">
       <div className="main-body">
         <div className="main-container shadow">
-          <Search />
-          <Forecast />
+          <Search defaultCity="New York" />
           <Footer />
         </div>
       </div>
