@@ -2,9 +2,6 @@ import React, { useState } from "react";
 import axios from "axios";
 
 import WeatherInfo from "./WeatherInfo";
-{
-  /*import WeatherForecast from "./WeatherForecast."; */
-}
 
 import weather from "./images/weather.svg";
 
@@ -84,7 +81,6 @@ export default function Search(props) {
           <div className="col-auto"></div>
         </form>
         <WeatherInfo data={weatherData} />
-        {/* <WeatherForecast coordinates={weatherData.coordinates} /> */}
       </div>
     );
   } else {
