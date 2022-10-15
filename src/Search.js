@@ -82,7 +82,7 @@ export default function Search(props) {
           <div className="col-auto"></div>
         </form>
         <WeatherInfo data={weatherData} />
-        <WeatherForecast coordinates={weatherData.coordinates} />
+        {/* <WeatherForecast coordinates={weatherData.coordinates} /> */}
       </div>
     );
   } else {
