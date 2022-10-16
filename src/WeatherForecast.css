@@ -2,14 +2,14 @@
   font-family: "Noto Serif Telugu", serif;
   padding: 12px;
   color: #594545;
-  max-width: 90%;
+  max-width: 95%;
   max-height: auto;
   margin: auto;
 }
 
 .card {
-  max-width: 113px;
-  min-width: 113px;
+  max-width: 17%;
+  min-width: 17%;
   color: #815b5b;
   opacity: 0.9;
   padding-left: 1px;

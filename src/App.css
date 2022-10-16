@@ -2,7 +2,7 @@
   font-family: "Noto Serif Telugu", serif;
   text-align: center;
   color: #fff8ea;
-} 
+}
 
 .App-header {
   background-color: #302525;
@@ -28,6 +28,6 @@ body {
   border: 2px solid #594545;
   border-radius: 30px;
   background: linear-gradient(69.8deg, #594545 2.8%, #815b5b 97.8%);
-  max-width: 40%;
+  max-width: 45%;
   max-height: auto;
 }
