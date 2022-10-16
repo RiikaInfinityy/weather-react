@@ -33,7 +33,7 @@ export default function WeatherForecast(props) {
         <br />
         <div className="row full-weather-report bg-light border-white rounded justify-content-center bg-opacity-50">
           {forecast.map(function (dailyForecast, index) {
-            if (index < 6) {
+            if (index < 5) {
               return (
                 <div className="card col-2 text-center" key={index}>
                   <WeatherForecastDay data={dailyForecast} />
