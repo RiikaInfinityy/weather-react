@@ -5,9 +5,10 @@
   text-align: right;
 }
 
-.search-bar {
+.form-control {
   font-family: "Merriweather Sans", sans-serif;
-  padding: 15px;
+  padding-left: 5px;
+  margin-left: 10px;
   color: #222324;
 }
 
@@ -18,5 +19,3 @@
 .btn-edit:hover {
   background-color: #323643;
 }
-
-

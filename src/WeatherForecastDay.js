@@ -58,7 +58,11 @@ export default function WeatherForecastDay(props) {
       <h4 className="card-title">{day()}</h4>
       <h6 className="card-subtitle mb-2 text-muted">{date()}</h6>
       <p>
-        <WeatherIcon code={props.data.weather[0].icon} size={40} />
+        <WeatherIcon
+          code={props.data.weather[0].icon}
+          size={40}
+          color="#222324"
+        />
       </p>
       <div className="WeatherForecast-temperatures">
         <span className="WeatherForecast-temperature-max">

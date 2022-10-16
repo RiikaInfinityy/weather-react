@@ -7,51 +7,42 @@ import WeatherTemperature from "./WeatherTemperature";
 
 export default function WeatherInfo(props) {
   return (
-    <div className="container text-center current-weather-report bg-light border-white rounded bg-opacity-50">
-      {" "}
+    <div className="container text-center current-weather-report text-white">
       <div className="row">
-        <div className="col-auto align-self-center mt-2">
-          <WeatherIcon code={props.data.icon} size={50} />
+        <div className="co1 align-self-center">
+          {" "}
+          <div className="current-city-name">{props.data.city}</div>
+          <WeatherIcon code={props.data.icon} size={60} color="white" />
           <br />
-          <span className="condition-text" id="weather-condition">
+          <div className="condition-text" id="weather-condition">
             {props.data.description}
-          </span>
-        </div>
-        <div
-          className="col-auto align-self-center current-temp"
-          id="current-temp"
-        >
-          <WeatherTemperature celsius={props.data.temperature} />
-        </div>
-        <div className="col-auto align-self-center"></div>
-        <div className="col align-self-center additional-info">
+          </div>
           <br />
-          <br />
-          <p>
-            <strong>Feels Like: </strong>
-            <span id="feelslike">{Math.round(props.data.feelslike)}</span>°
-          </p>
-          <p>
-            <strong>Humidity: </strong>
-            <span id="humidity">{Math.round(props.data.humidity)}</span>%
-          </p>
-          <p>
-            <strong>Wind Speed: </strong>
-            <span id="wind">{Math.round(props.data.wind)}</span>m/s
-          </p>
-          <p>
-            <strong>Pressure: </strong>
-            <span id="pressure">{Math.round(props.data.pressure)}</span>hpa
-          </p>
-        </div>
-        <div className="col-auto currentLoc align-self-center">
-          <p className="current-city-name" id="current-location">
-            {props.data.city}
-          </p>
-
+          <div className="current-temp">
+            <WeatherTemperature celsius={props.data.temperature} />
+          </div>
           <div className="current-time-date">
             <FormattedDate date={props.data.date} />
           </div>
+        </div>
+      </div>
+      <br />
+      <div className="row align-self-center bg-light text-dark rounded pt-2 pb-2 bg-opacity-30 ">
+        <div className="col info-text">
+          <strong>Feels Like: </strong>
+          {Math.round(props.data.feelslike)}°
+        </div>
+        <div className="col info-text">
+          <strong>Humidity: </strong>
+          {Math.round(props.data.humidity)}%
+        </div>
+        <div className="col info-text">
+          <strong>Wind Speed: </strong>
+          {Math.round(props.data.wind)}m/s
+        </div>
+        <div className="col info-text">
+          <strong>Pressure: </strong>
+          {Math.round(props.data.pressure)}hpa
         </div>
       </div>
     </div>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast.";
 
 import weather from "./images/weather.svg";
 
@@ -12,7 +13,6 @@ export default function Search(props) {
   const [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
-    console.log("true");
     setWeatherData({
       ready: true,
       coordinates: response.data.coord,
@@ -37,9 +37,20 @@ export default function Search(props) {
     setCity(event.target.value);
   }
 
+  function handleCurrentCityChange(event) {
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(findCurrentLoc);
+  }
+
   function search() {
     const apiKey = "4abcc39b04e548daee77c144d7483bb4";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(handleResponse);
+  }
+
+  function findCurrentLoc(position) {
+    let apiKey = "4abcc39b04e548daee77c144d7483bb4";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
 
@@ -51,12 +62,10 @@ export default function Search(props) {
           <div className="col-3 align-self-center text-center">
             <img src={weather} alt="weather" width={140} />{" "}
           </div>
-          <div className="col-3 align-self-center text-start"></div>
-          <div className="col-4 align-self-center text-start">
+          <div className="col-6 align-self-center text-start">
             <input
               type="search"
               className="form-control"
-              id="city-input"
               placeholder="Search City"
               onChange={handleCityChange}
             />
@@ -73,7 +82,7 @@ export default function Search(props) {
             <button
               type="submit"
               className="btn btn-light btn-outline-secondary btn-edit"
-              id="current-loc-button"
+              onClick={handleCurrentCityChange}
             >
               <i className="fa-solid fa-location-dot search-icon"></i>
             </button>
@@ -81,6 +90,7 @@ export default function Search(props) {
           <div className="col-auto"></div>
         </form>
         <WeatherInfo data={weatherData} />
+        <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {

@@ -14,7 +14,7 @@ export default function Footer() {
           alt="Github Open Source Code for Project"
           rel="noopener noreferrer"
         >
-          <i class="bi bi-code-square"></i>
+          <i className="bi bi-code-square"></i>
         </a>{" "}
         <a
           href="https://rikalim-portfolio-webpage.netlify.app/"

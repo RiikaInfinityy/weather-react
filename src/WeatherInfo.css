@@ -1,31 +1,25 @@
 .container {
-  max-width: 700px;
+  max-width: 400px;
   max-height: auto;
+  color: white;
 }
 
 .current-city-name {
-  font-size: 30px;
+  font-size: 18px;
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 5px;
 }
 
 .current-time-date {
   font-size: 11px;
-}
-
-.current-weather-icon {
-  font-size: 40px;
-  color: white;
+  margin-top: 15px;
 }
 
 .btn-edit:hover {
   background-color: #323643;
-}
-
-.celsius-text-format {
-  font-size: 40px;
 }
 
 .current-weather-report {
@@ -36,19 +30,12 @@
 
 .condition-text {
   text-align: center;
-  font-size: 15px;
-  font-weight: bolder;
+  font-size: 14px;
   text-transform: uppercase;
 }
 
-.additional-info {
+.info-text {
   font-size: 12px;
-  line-height: 10px;
-  text-align: left;
-}
-
-.current-temp {
-  font-size: 55px;
 }
 
 .button-text {
@@ -57,21 +44,19 @@
 
 .Search .temperature {
   font-weight: bold;
-  color: rgb(33, 33, 33);
-  font-size: 60px;
-  line-height: 64px;
-  margin-left: 5px;
+  color: white;
+  font-size: 70px;
   font-weight: 400;
-  margin-left: 10px;
+  margin-top: -20px;
 }
 
 .Search .unit {
-  color: rgb(33, 33, 33);
-  font-size: 22px;
+  color: white;
+  font-size: 20px;
   font-weight: 400;
   position: relative;
   line-height: 1;
-  top: -20px;
+  top: -26px;
   left: 10px;
 }
 

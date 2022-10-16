@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <div className="main-body">
         <div className="main-container shadow">
-          <Search defaultCity="New York" />
+          <Search defaultCity="Italy" />
           <Footer />
         </div>
       </div>

@@ -22,25 +22,33 @@ export default function WeatherTemperature(props) {
   if (unit === "celsius") {
     return (
       <div className="WeatherTemperature">
-        <span className="temperature">{Math.round(props.celsius)}</span>
-        <span className="unit">°C</span> <span className="unit">|</span>{" "}
-        <span className="unit">
-          <a href="/" onClick={showFahrenheit}>
-            °F
-          </a>
-        </span>
+        <div className="temperature">
+          {Math.round(props.celsius)}
+          <span className="unit">°C</span>
+        </div>
+        <button
+          type="submit"
+          className="btn btn-light btn-outline-secondary btn-edit btn-sm"
+          onClick={showFahrenheit}
+        >
+          Convert to °F
+        </button>
       </div>
     );
   } else {
     return (
       <div className="WeatherTemperature">
-        <span className="temperature">{Math.round(fahrenheit())}</span>
-        <span className="unit">
-          <a href="/" onClick={showCelsius}>
-            °C
-          </a>
-        </span>{" "}
-        <span className="unit">|</span> <span className="unit">°F</span>
+        <div className="temperature">
+          {Math.round(fahrenheit())}
+          <span className="unit">°F</span>
+        </div>
+        <button
+          type="submit"
+          className="btn btn-light btn-outline-secondary btn-edit btn-sm"
+          onClick={showCelsius}
+        >
+          Convert to °C
+        </button>
       </div>
     );
   }
