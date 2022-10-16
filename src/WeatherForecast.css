@@ -19,6 +19,7 @@
 .card-title {
   font-size: 14px;
   font-weight: bolder;
+  text-transform: uppercase;
 }
 
 .card-subtitle {
