@@ -31,7 +31,7 @@ export default function WeatherForecast(props) {
     return (
       <div className="Forecast">
         <br />
-        <div className="row full-weather-report bg-light border-white rounded justify-content-center bg-opacity-50">
+        <div className="row full-weather-report justify-content-center">
           {forecast.map(function (dailyForecast, index) {
             if (index < 5) {
               return (
