@@ -1,5 +1,11 @@
 import React from "react";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
+import { BrowserChrome } from "react-bootstrap-icons";
+import { CodeSquare } from "react-bootstrap-icons";
+import { BracesAsterisk } from "react-bootstrap-icons";
+
 import "./Footer.css";
 
 export default function Footer() {
@@ -14,7 +20,7 @@ export default function Footer() {
           alt="Github Open Source Code for Project"
           rel="noopener noreferrer"
         >
-          <i className="bi bi-code-square"></i>
+          <CodeSquare className="footer-icon" />
         </a>{" "}
         <a
           href="https://rikalim-portfolio-webpage.netlify.app/"
@@ -23,7 +29,7 @@ export default function Footer() {
           alt="Rika Lim's Front-End Portfolio"
           rel="noopener noreferrer"
         >
-          <i className="bi bi-braces-asterisk"></i>
+          <BracesAsterisk className="footer-icon" />
         </a>{" "}
         <a
           href="https://www.shecodes.io/graduates/49436-rika-lim-ming-xian"
@@ -32,7 +38,7 @@ export default function Footer() {
           alt="Coded by Rika Lim"
           rel="noopener noreferrer"
         >
-          <i className="bi bi-person-circle"></i>
+          <FontAwesomeIcon icon={faUserCircle} className="footer-icon" />
         </a>{" "}
         <a
           href="https://rikalim.com"
@@ -41,7 +47,7 @@ export default function Footer() {
           alt="Rika Lim's Game Dev Portfolio"
           rel="noopener noreferrer"
         >
-          <i className="bi bi-browser-chrome"></i>
+          <BrowserChrome className="footer-icon" />
         </a>
         <p />
       </div>

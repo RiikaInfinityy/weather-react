@@ -1,6 +1,14 @@
 import React, { useState } from "react";
 import axios from "axios";
 
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
+import InputGroup from "react-bootstrap/InputGroup";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast.";
 
@@ -57,38 +65,42 @@ export default function Search(props) {
   if (weatherData.ready) {
     return (
       <div className="Search">
-        <p />
-        <form className="row g-3 search-bar" onSubmit={handleSubmit}>
-          <div className="col-3 align-self-center text-center">
-            <img src={weather} alt="weather" width={140} />{" "}
-          </div>
-          <div className="col-6 align-self-center text-start">
-            <input
+        <div className="align-self-center text-center mt-4 mb-3">
+          <img src={weather} alt="weather" width={200} />{" "}
+        </div>
+
+        <Form onSubmit={handleSubmit}>
+          <InputGroup className="mb-3 mt-3 ps-4 pe-4">
+            <Form.Control
               type="search"
               className="form-control"
               placeholder="Search City"
+              aria-label="Recipient's username"
+              aria-describedby="basic-addon2"
               onChange={handleCityChange}
             />
-          </div>
-          <div className="col-auto align-self-center text-center ms-0 ">
-            <button
+            <Button
+              variant="outline-secondary"
               type="submit"
-              className="btn btn-light btn-outline-secondary btn-edit"
+              className="btn btn-light btn-outline-secondary btn-format"
               id="submit-button"
             >
-              <i className="fa-solid fa-magnifying-glass search-icon"></i>
-            </button>
-            {"  "}
-            <button
+              <FontAwesomeIcon
+                icon={faMagnifyingGlass}
+                className="search-icon"
+              />
+            </Button>
+            <Button
+              variant="outline-secondary"
               type="submit"
-              className="btn btn-light btn-outline-secondary btn-edit"
+              className="btn btn-light btn-outline-secondary btn-format"
               onClick={handleCurrentCityChange}
             >
-              <i className="fa-solid fa-location-dot search-icon"></i>
-            </button>
-          </div>
-          <div className="col-auto"></div>
-        </form>
+              <FontAwesomeIcon icon={faLocationDot} className="search-icon" />
+            </Button>
+          </InputGroup>
+        </Form>
+
         <WeatherInfo data={weatherData} />
         <WeatherForecast coordinates={weatherData.coordinates} />
       </div>

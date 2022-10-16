@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./WeatherInfo.css";
+
 export default function FormattedDate(props) {
   let days = [
     "Sunday",
@@ -43,12 +45,13 @@ export default function FormattedDate(props) {
 
   return (
     <div>
-      <i className="bi bi-calendar-heart"></i> {""} {month} {today}, {year}{" "}
-      <i className="bi bi-dot"></i>
-      {day}
-      <br />
-      <i className="bi bi-dot"></i>Last Updated on {hours}:{minutes}{" "}
-      <i className="bi bi-dot"></i>
+      <div className="current-date">
+        {month} {today}, {year} ({day})
+      </div>
+      <div className="current-time">
+        <i className="bi bi-dot"></i>Last Updated on {hours}:{minutes}{" "}
+        <i className="bi bi-dot"></i>
+      </div>
     </div>
   );
 }

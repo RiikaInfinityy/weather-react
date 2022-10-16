@@ -1,21 +1,14 @@
-.curve-text {
-  font-size: 30px;
-  color: white;
-  font-family: "Dancing Script", cursive;
-  text-align: right;
+.btn-format:hover {
+  background-color: #594545;
+  color: #fff8ea;
 }
 
 .form-control {
-  font-family: "Merriweather Sans", sans-serif;
   padding-left: 5px;
   margin-left: 10px;
-  color: #222324;
+  color: #9e7676;
 }
 
 .search-icon {
   font-size: 18px;
-}
-
-.btn-edit:hover {
-  background-color: #323643;
 }
