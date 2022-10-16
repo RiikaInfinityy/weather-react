@@ -51,13 +51,13 @@ export default function Search(props) {
   }
 
   function search() {
-    const apiKey = "4abcc39b04e548daee77c144d7483bb4";
+    const apiKey = "5201594abea9f3e38b70e65b11a80c24";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
 
   function findCurrentLoc(position) {
-    let apiKey = "4abcc39b04e548daee77c144d7483bb4";
+    let apiKey = "5201594abea9f3e38b70e65b11a80c24";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
