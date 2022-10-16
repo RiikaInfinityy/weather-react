@@ -2,6 +2,8 @@
   font-family: "Noto Serif Telugu", serif;
   padding: 12px;
   color: #594545;
+  max-width: 90%;
+  max-height: auto;
   margin: auto;
 }
 
@@ -12,7 +14,7 @@
   opacity: 0.9;
   padding-left: 1px;
   padding-right: 1px;
-  margin: 8px;
+  margin: 5px;
 }
 
 .card-title {
