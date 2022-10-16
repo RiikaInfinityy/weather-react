@@ -2,6 +2,8 @@
   font-family: "Noto Serif Telugu", serif;
   padding: 12px;
   color: #594545;
+  max-width: 90%;
+  max-height: auto;
   margin: auto;
 }
 
