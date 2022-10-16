@@ -28,6 +28,10 @@
   color: #9e7676;
 }
 
+.card:hover {
+  background-color: #e3cece;
+}
+
 .WeatherForecast-temperature-min {
   opacity: 0.6;
   margin-left: 5px;
